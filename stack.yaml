@@ -37,9 +37,13 @@ resolver: lts-8.11
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - '.'
+#- location:
+#    git: git@github.com:DanielG/ghc-mod.git
+#    commit: 50617fe41d382132472c3beec50749b21e21325c
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps:
+- transformers-0.5.4.0
 
 # Override default flag values for local packages and extra-deps
 flags: {}

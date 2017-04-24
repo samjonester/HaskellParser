@@ -3,7 +3,6 @@ version:             0.1.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/githubuser/HaskellParser#readme
-license:             MIT
 author:              Sam Jones
 maintainer:          sam@samljones.com
 copyright:           2017 Sam Jones
@@ -24,6 +23,7 @@ executable HaskellParser
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , HaskellParser
+                     , transformers
   default-language:    Haskell2010
 
 test-suite HaskellParser-test
